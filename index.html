@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoShield | Global Environmental Protection Campaign & Action Hub</title>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="mt.css">
+</head>
+<body>
+
+    <!-- Header / Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="brand-logo">
+                <i class="fa-solid fa-leaf text-gradient"></i>
+                <span>Eco<span class="highlight">Shield</span></span>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#hero" class="active">Home</a>
+                <a href="#about">Mission</a>
+                <a href="#actions">Solutions</a>
+                <a href="#swaps">Eco-Swaps</a>
+                <a href="#quiz">Eco-Quiz</a>
+                <a href="#calculator">Calculator</a>
+                <a href="#faq">FAQ</a>
+                <a href="#take-action">Pledge</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#take-action" class="btn btn-primary btn-sm">Join Movement</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="badge fade-in">Global Environmental Awareness & Action Hub</span>
+            <h1 class="hero-title fade-in-delay-1">Defending Our Ecosystems Through <span class="text-gradient">Collective Action</span></h1>
+            <p class="hero-subtitle fade-in-delay-2">Climate destabilization, plastic pollution, and habitat destruction threaten our future. Explore verified scientific solutions, calculate your carbon footprint, and pledge your commitment today.</p>
+            <div class="hero-buttons fade-in-delay-3">
+                <a href="#actions" class="btn btn-primary btn-lg"><i class="fa-solid fa-compass"></i> Explore Solutions</a>
+                <a href="#quiz" class="btn btn-outline btn-lg"><i class="fa-solid fa-brain"></i> Take Eco-Quiz</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3 class="counter" data-target="45820">0</h3>
+                    <p>Trees Planted Globally</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="18450">0</h3>
+                    <p>Active Climate Pledges</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="120">0</h3>
+                    <p>Partner Communities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Activity Ticker -->
+    <div class="live-ticker">
+        <div class="container ticker-container">
+            <span class="ticker-label"><i class="fa-solid fa-bolt text-gradient"></i> Live Impact Feed:</span>
+            <div class="ticker-wrapper">
+                <div class="ticker-track" id="tickerTrack">
+                    <span>Sarah M. from California pledged to eliminate single-use plastics.</span>
+                    <span>David K. calculated a low monthly carbon footprint of 240 kg CO2e.</span>
+                    <span>EcoShield community successfully planted 500 mangroves in Southeast Asia.</span>
+                    <span>Elena R. completed the Advanced Climate Quiz with a 100% score!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission / About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Core Mission</span>
+                <h2 class="section-title">Understanding Planetary Boundaries</h2>
+                <p class="section-desc">Earth's life support systems are reaching critical thresholds. Comprehensive education and rapid structural changes are imperative for human survival.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon"><i class="fa-solid fa-temperature-arrow-up"></i></div>
+                    <h3>Global Warming & Emissions</h3>
+                    <p>Industrial carbon dioxide and methane emissions trap solar radiation, increasing global average temperatures and melting polar ice caps.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon"><i class="fa-solid fa-water"></i></div>
+                    <h3>Ocean Acidification</h3>
+                    <p>Absorbing excess atmospheric carbon lowers ocean pH levels, dissolving calcium carbonate structures vital for coral reefs and marine life.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon"><i class="fa-solid fa-tree"></i></div>
+                    <h3>Biodiversity Collapse</h3>
+                    <p>Deforestation and habitat fragmentation drive extinction rates up to 1,000 times higher than natural background rates, destabilizing food webs.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon"><i class="fa-solid fa-bottle-water"></i></div>
+                    <h3>Microplastic Contamination</h3>
+                    <p>Plastics never truly degrade; they fragment into microscopic particles now found in marine ecosystems, drinking water, and human bloodstreams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Environmental Actions Section -->
+    <section class="section actions bg-alt" id="actions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Actionable Pillars</span>
+                <h2 class="section-title">Key Pillars of Environmental Protection</h2>
+                <p class="section-desc">Practical methodologies and technological transitions required to build a sustainable, circular civilization.</p>
+            </div>
+            <div class="actions-wrapper">
+                <div class="action-filters">
+                    <button class="filter-btn active" data-filter="all">All Measures</button>
+                    <button class="filter-btn" data-filter="energy">Renewable Energy</button>
+                    <button class="filter-btn" data-filter="waste">Waste Management</button>
+                    <button class="filter-btn" data-filter="nature">Ecosystem Restoration</button>
+                    <button class="filter-btn" data-filter="water">Water Conservation</button>
+                </div>
+                <div class="actions-grid" id="actionsGrid">
+                    <!-- Action 1 -->
+                    <div class="action-card" data-category="energy">
+                        <div class="action-img-placeholder energy-bg">
+                            <i class="fa-solid fa-solar-panel"></i>
+                        </div>
+                        <div class="action-body">
+                            <span class="category-badge">Renewable Energy</span>
+                            <h3>Transition to Clean Power</h3>
+                            <p>Phase out coal and natural gas by scaling solar photovoltaics, offshore wind farms, and next-generation battery storage systems.</p>
+                            <ul class="action-list">
+                                <li><i class="fa-solid fa-check"></i> Install rooftop solar arrays</li>
+                                <li><i class="fa-solid fa-check"></i> Support green utility tariffs</li>
+                                <li><i class="fa-solid fa-check"></i> Enhance household energy efficiency</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Action 2 -->
+                    <div class="action-card" data-category="waste">
+                        <div class="action-img-placeholder waste-bg">
+                            <i class="fa-solid fa-recycle"></i>
+                        </div>
+                        <div class="action-body">
+                            <span class="category-badge">Waste Management</span>
+                            <h3>Circular Economy Principles</h3>
+                            <p>Redesign manufacturing to eliminate packaging waste, promote product repairability, and enforce strict industrial recycling standards.</p>
+                            <ul class="action-list">
+                                <li><i class="fa-solid fa-check"></i> Ban single-use plastics at municipal levels</li>
+                                <li><i class="fa-solid fa-check"></i> Practice advanced organic composting</li>
+                                <li><i class="fa-solid fa-check"></i> Upcycle textiles and electronics</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Action 3 -->
+                    <div class="action-card" data-category="nature">
+                        <div class="action-img-placeholder nature-bg">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <div class="action-body">
+                            <span class="category-badge">Conservation</span>
+                            <h3>Mass Reforestation Programs</h3>
+                            <p>Restore degraded tropical forests, peatlands, and mangrove swamps to sequester gigatons of atmospheric carbon safely.</p>
+                            <ul class="action-list">
+                                <li><i class="fa-solid fa-check"></i> Plant endemic tree species</li>
+                                <li><i class="fa-solid fa-check"></i> Protect old-growth forest reserves</li>
+                                <li><i class="fa-solid fa-check"></i> Support indigenous land stewardship</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Action 4 -->
+                    <div class="action-card" data-category="water">
+                        <div class="action-img-placeholder water-bg">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <div class="action-body">
+                            <span class="category-badge">Water Conservation</span>
+                            <h3>Sustainable Hydrological Management</h3>
+                            <p>Protect freshwater aquifers, upgrade aging municipal distribution infrastructure, and deploy smart agricultural irrigation.</p>
+                            <ul class="action-list">
+                                <li><i class="fa-solid fa-check"></i> Implement rainwater harvesting systems</li>
+                                <li><i class="fa-solid fa-check"></i> Reduce industrial wastewater discharge</li>
+                                <li><i class="fa-solid fa-check"></i> Repair household leaks promptly</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainable Swaps Directory -->
+    <section class="section swaps-section" id="swaps">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Eco-Friendly Swaps</span>
+                <h2 class="section-title">Everyday Product Alternatives</h2>
+                <p class="section-desc">Discover simple household product substitutions that drastically eliminate your daily plastic and carbon footprint.</p>
+            </div>
+            <div class="swaps-search-box">
+                <input type="text" id="swapSearchInput" placeholder="Search eco-friendly alternatives (e.g., bag, straw, bottle)...">
+            </div>
+            <div class="swaps-grid" id="swapsGrid">
+                <div class="swap-card" data-keywords="bottle plastic water drink">
+                    <div class="swap-bad">Plastic Water Bottle</div>
+                    <div class="swap-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="swap-good">Stainless Steel Insulated Flask</div>
+                    <p>Avoids hundreds of single-use bottles per year and keeps liquids cold for 24 hours.</p>
+                </div>
+                <div class="swap-card" data-keywords="bag grocery shopping supermarket">
+                    <div class="swap-bad">Single-Use Plastic Bags</div>
+                    <div class="swap-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="swap-good">Heavy-Duty Organic Cotton Tote</div>
+                    <p>Durable, washable, and replaces over 500 polyethylene bags over its lifespan.</p>
+                </div>
+                <div class="swap-card" data-keywords="straw drink cafe juice">
+                    <div class="swap-bad">Plastic Drinking Straws</div>
+                    <div class="swap-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="swap-good">Bamboo or Metal Reusable Straws</div>
+                    <p>Prevents marine wildlife ingestion hazards while maintaining beverage enjoyment.</p>
+                </div>
+                <div class="swap-card" data-keywords="cleaner chemical soap detergent">
+                    <div class="swap-bad">Harsh Chemical Cleaning Sprays</div>
+                    <div class="swap-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="swap-good">Biodegradable Tablet Cleaners</div>
+                    <p>Eliminates single-use plastic trigger bottles and toxic chemical runoff into waterways.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Eco-Quiz Hub -->
+    <section class="section quiz-section bg-alt" id="quiz">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Test Your Knowledge</span>
+                <h2 class="section-title">Interactive Environmental Literacy Quiz</h2>
+                <p class="section-desc">Test your understanding of climate science, recycling practices, and ecological sustainability.</p>
+            </div>
+            <div class="quiz-card" id="quizContainer">
+                <div id="quizQuestionBox">
+                    <div class="quiz-progress">Question <span id="currentQNum">1</span> of 4</div>
+                    <h3 id="quizQuestionTitle">What is the primary greenhouse gas driving anthropogenic global warming?</h3>
+                    <div class="quiz-options" id="quizOptions">
+                        <button class="quiz-option-btn" data-correct="false">Nitrous Oxide</button>
+                        <button class="quiz-option-btn" data-correct="true">Carbon Dioxide (CO2)</button>
+                        <button class="quiz-option-btn" data-correct="false">Chlorofluorocarbons</button>
+                        <button class="quiz-option-btn" data-correct="false">Ozone</button>
+                    </div>
+                </div>
+                <div id="quizResultBox" class="hidden">
+                    <h3>Quiz Completed Successfully!</h3>
+                    <div class="quiz-score-display">Your Score: <span id="finalScore">0</span> / 4</div>
+                    <p id="quizFeedbackMessage">Fantastic job! You possess a strong understanding of global environmental dynamics.</p>
+                    <button class="btn btn-primary" id="restartQuizBtn">Retake Quiz</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carbon Footprint Calculator -->
+    <section class="section calculator-section" id="calculator">
+        <div class="container">
+            <div class="calculator-card">
+                <div class="calc-header">
+                    <h2><i class="fa-solid fa-calculator"></i> Advanced Carbon Footprint Estimator</h2>
+                    <p>Calculate your estimated monthly CO2 equivalent emissions and receive tailored recommendations for footprint reduction.</p>
+                </div>
+                <form id="footprintForm" class="calc-form">
+                    <div class="form-group">
+                        <label for="transportMethod">Primary Mode of Daily Commute</label>
+                        <select id="transportMethod" required>
+                            <option value="50">Electric Vehicle / Cycling / Walking</option>
+                            <option value="150">Public Transit (Bus, Metro, Train)</option>
+                            <option value="320">Gasoline / Diesel Automobile (Standard)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dietChoice">Household Dietary Pattern</label>
+                        <select id="dietChoice" required>
+                            <option value="90">Plant-Based / Vegan</option>
+                            <option value="160">Vegetarian / Low Meat</option>
+                            <option value="340">Standard Omnivore / High Meat Consumption</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="energyUsage">Monthly Household Electricity Consumption (kWh)</label>
+                        <input type="number" id="energyUsage" placeholder="e.g., 300" min="0" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Calculate My Footprint Now</button>
+                </form>
+                <div class="calc-result hidden" id="calcResult">
+                    <h3>Estimated Monthly Emissions:</h3>
+                    <div class="result-number"><span id="co2Value">0</span> <small>kg CO2e</small></div>
+                    <p id="resultAdvice">Your footprint level is evaluated. Follow our recommended green measures to lower emissions further.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Frequently Asked Questions</span>
+                <h2 class="section-title">Everything You Need to Know</h2>
+                <p class="section-desc">Clear, science-backed answers regarding climate action, zero-waste living, and carbon offsetting.</p>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is a carbon footprint and why does it matter?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A carbon footprint measures the total greenhouse gas emissions caused directly and indirectly by an individual, organization, event, or product, expressed in equivalent tons of carbon dioxide (CO2e). Reducing it mitigates runaway climate change.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does recycling plastic actually help the environment?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Recycling diverts solid waste from overflowing landfills and oceans, conserves crude oil resources, and requires significantly less industrial energy compared to manufacturing virgin plastics from raw fossil fuels.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can individual actions truly make a difference against global climate change?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. Individual behavioral shifts drive market demand for sustainable corporate products, influence municipal green policies, and collectively amount to gigatons of avoided emissions worldwide.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I participate in local EcoShield community cleanups?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can sign our Climate Pledge below to receive local chapter invitations, weekly environmental newsletters, and cleanup event schedules in your region.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pledge & Engagement Section -->
+    <section class="section take-action bg-alt" id="take-action">
+        <div class="container">
+            <div class="pledge-grid">
+                <div class="pledge-info">
+                    <span class="section-tag">Take The Pledge</span>
+                    <h2>Commit to Sustainable Advocacy</h2>
+                    <p>Join over 18,000 global citizens who have committed to lowering their carbon emissions, reducing plastic dependency, and protecting natural ecosystems.</p>
+                    <div class="benefits-list">
+                        <div class="b-item"><i class="fa-solid fa-circle-check"></i> Weekly climate action guides & newsletters</div>
+                        <div class="b-item"><i class="fa-solid fa-circle-check"></i> Access to regional community cleanup networks</div>
+                        <div class="b-item"><i class="fa-solid fa-circle-check"></i> Verified digital certificate of climate commitment</div>
+                    </div>
+                </div>
+                <div class="pledge-form-wrapper">
+                    <form id="pledgeForm" class="pledge-form">
+                        <h3>Sign The Official Green Pledge</h3>
+                        <div class="form-control">
+                            <input type="text" id="pledgeName" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-control">
+                            <input type="email" id="pledgeEmail" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-control">
+                            <select id="pledgeAction" required>
+                                <option value="" disabled selected>Select Primary Commitment</option>
+                                <option value="plastic">Eliminate Single-Use Plastics</option>
+                                <option value="energy">Transition to Renewable Energy</option>
+                                <option value="plant">Plant 15 Trees Annually</option>
+                                <option value="transit">Adopt Public Transit & Cycling</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-secondary btn-block">Submit My Official Pledge</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#hero" class="brand-logo">
+                    <i class="fa-solid fa-leaf text-gradient"></i>
+                    <span>Eco<span class="highlight">Shield</span></span>
+                </a>
+                <p>A premier global campaign dedicated to environmental education, ecosystem restoration, scientific advocacy, and sustainable development.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">Mission</a></li>
+                    <li><a href="#actions">Solutions</a></li>
+                    <li><a href="#swaps">Eco-Swaps</a></li>
+                    <li><a href="#quiz">Eco-Quiz</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <p>Follow our global channels for daily climate updates and conservation milestones.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 EcoShield Environmental Campaign. All Rights Reserved. Built for a Sustainable Future.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast hidden">
+        <i class="fa-solid fa-circle-info" id="toastIcon"></i>
+        <span id="toastMessage">Action completed successfully!</span>
+    </div>
+
+    <!-- Custom JavaScript File -->
+    <script src="mt.js"></script>
+</body>
+</html>
